@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -18,6 +19,6 @@ app.get('/register', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('Escuchando puerto 3000');
+app.listen(PORT, () => {
+    console.log('Escuchando puerto ' + PORT);
 });
